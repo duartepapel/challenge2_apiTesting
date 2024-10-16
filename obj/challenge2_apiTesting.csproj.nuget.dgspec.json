@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/papel/projects/challenge2_apiTesting/challenge2_apiTesting.csproj": {}
+  },
+  "projects": {
+    "/home/papel/projects/challenge2_apiTesting/challenge2_apiTesting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/papel/projects/challenge2_apiTesting/challenge2_apiTesting.csproj",
+        "projectName": "challenge2_apiTesting",
+        "projectPath": "/home/papel/projects/challenge2_apiTesting/challenge2_apiTesting.csproj",
+        "packagesPath": "/home/papel/.nuget/packages/",
+        "outputPath": "/home/papel/projects/challenge2_apiTesting/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/papel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.11.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[112.1.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.427/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
