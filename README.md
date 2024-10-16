@@ -25,14 +25,14 @@ sudo apt-get update
 sudo apt-get install -y dotnet-sdk-6.0
 ```
 
-### 2. Create a New .NET Project
+### 2. Clone the repository
 
-Open a terminal in Visual Studio Code and run the following commands to create a new .NET project:
-
-```bash
-mkdir APITestingProject
-cd APITestingProject
-dotnet new nunit
+   
+   ```bash
+   - git clone git@github.com:duartepapel/challenge2_apiTesting.git <SSH> 
+   or 
+   - git clone https://github.com/duartepapel/challenge2_apiTesting.git <HTTPS>
+   - cd challenge2_apiTesting
 ```
 
 ### 3. Install Necessary NuGet Packages
@@ -47,41 +47,8 @@ dotnet add package RestSharp
 dotnet add package FluentAssertions
 ```
 
-### 4. Write Your API Tests
 
-Once you have your project set up and the necessary packages installed, you can start writing your API tests using NUnit. 
-
-Here’s a simple example of what your test class might look like:
-
-```csharp
-using FluentAssertions;
-using NUnit.Framework;
-using RestSharp;
-
-namespace APITestingProject
-{
-    public class ApiTests
-    {
-        private RestClient client;
-
-        [SetUp]
-        public void Setup()
-        {
-            client = new RestClient("https://api.example.com");
-        }
-
-        [Test]
-        public void GetEndpoint_Returns200()
-        {
-            var request = new RestRequest("endpoint", Method.Get);
-            var response = client.Execute(request);
-            response.StatusCode.Should().Be(System.Net.HttpStatusCode.OK);
-        }
-    }
-}
-```
-
-### 5. Running Your Tests
+### 4. Running Your Tests
 
 To run your tests, execute the following command in your terminal:
 
@@ -93,7 +60,7 @@ This will run all the tests in your project and display the results in the termi
 
 ## Conclusion
 
-You are now set up to write and run API tests using NUnit in a WSL2 environment with Visual Studio Code. Happy testing!
+Happy testing!
 
 For more information on NUnit and API testing, check the official documentation:
 
